@@ -70,8 +70,17 @@ function playRound(compChoice, playerChoice) {
   ) {
     retMessage =
       "Invalid selection please choose between: Rock Paper or Scissors";
+    return retMessage;
+  }
+  //return whether or not the user has won
+}
+
+function game() {
+  for (let i = 0; i < 5; i++) {
+    console.log(
+      `Round ${i + 1} ${playRound(computerPlay(), playerSelection())}`
+    );
   }
 }
-//return whether or not the user has won
-
+game();
 //create a function called game that implements 5 rounds and prints the result on the console
