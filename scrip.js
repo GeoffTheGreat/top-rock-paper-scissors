@@ -1,13 +1,24 @@
 //create array of rock paper and scissor rpsArray
-
+const rpsArray = ["rock", "paper", "scissors"];
 //computerPlay function
-//get a random item from the rpsArray
-//return the random item
+function computerPlay() {
+  //get a random item from the rpsArray
+  let randomInt = Math.floor(Math.random() * (3 - 0)) + 0;
+  let comPlay = rpsArray[randomInt];
+  //return the random item
+  return comPlay;
+}
 
 //player selection
-//create a variable for the userInput
-//get input from the user and assign it to userInput
-//make userInput standard so it can be referenced to the rpsArray
+function playerSelection() {
+  //create a variable for the userInput
+  let userInput = "";
+  //get input from the user and assign it to userInput
+  userInput = prompt("Choose your weapon: Rock, Paper or Scissors", "Rock");
+  //make userInput standard so it can be referenced to the rpsArray
+  userInput = userInput.toLowerCase();
+  return userInput;
+}
 
 //make a function that takes both the computer play and the user play///playRound
 //use conditional statements to determine who has won
