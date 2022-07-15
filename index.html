@@ -2,9 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome stylesheet -->
+    <script
+      src="https://kit.fontawesome.com/61bea6fb0e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <script src="scrip.js"></script>
+    <div id="lifescreen">
+      <div class="header">
+        <h1>This is no ordinary game of rock paper scissors</h1>
+        <h2>This is a matter of LIFE and DEATH</h2>
+      </div>
+      <div class="play">
+        <h2>CHOOSE YOUR WEAPON</h2>
+        <div class="choose">
+          <div class="choice fa-regular fa-hand-back-fist" id="rock"></div>
+          <div class="choice fa-regular fa-hand" id="paper"></div>
+          <div class="choice fa-regular fa-hand-scissors" id="scissors"></div>
+        </div>
+        <div class="result" id="result">
+          <h3>You: <span id="humanRes">0</span></h3>
+          <h3 id="result--message"></h3>
+          <h3>Computer: <span id="cpuRes">0</span></h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="scrip.js" defer></script>
   </body>
 </html>

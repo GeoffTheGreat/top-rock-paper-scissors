@@ -1,0 +1,75 @@
+body {
+  background-color: #ca041c;
+  color: #efecf7;
+  font-family: "Jim Nightshade", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  margin: 10px;
+}
+.header {
+  background-color: #f03b36;
+  width: 80%;
+  margin: 5px auto;
+  padding: 2rem;
+  border: 2px solid #160d0e98;
+  border-radius: 10px;
+}
+.play {
+  width: 80%;
+  margin: 0 auto;
+}
+.choose {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.choice {
+  border: 2px solid #160d0e98;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f03b36;
+  display: flex;
+  font-size: 3rem;
+  padding: 30px;
+}
+.choice:hover {
+  opacity: 0.5;
+  box-shadow: 5px 5px 5px #160d0e98, -5px -5px 5px #160d0e98;
+}
+.result {
+  display: flex;
+  justify-content: space-between;
+}
+#endscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #f03b36;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#end-button {
+  font-family: "Jim Nightshade", cursive;
+  font-size: 3rem;
+  width: 20%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #efecf7;
+  background-color: #f03b36;
+  box-shadow: 5px 5px 5px #ca041c, -5px -5px 5px #ca041c;
+  border: 1px solid #160d0e98;
+}
+#end-message {
+  font-size: 2rem;
+  font-weight: bold;
+}
