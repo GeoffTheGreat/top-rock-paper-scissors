@@ -7,14 +7,16 @@ body {
   padding: 0;
   margin: 0;
 }
-h2 {
+h2,
+h1,
+p {
   margin: 10px;
 }
 .header {
   background-color: #f03b36;
   width: 80%;
   margin: 5px auto;
-  padding: 2rem;
+  padding: 1rem;
   border: 2px solid #160d0e98;
   border-radius: 10px;
 }
